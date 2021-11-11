@@ -1,4 +1,4 @@
-def decode_char(_char)
+def decode_char(char)
   morse_converter = {
     '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E',
     '..-.' => 'F', '--.' => 'G', '....' => 'H', '..' => 'I', '.---' => 'J',
@@ -6,7 +6,7 @@ def decode_char(_char)
     '.--.' => 'P', '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T',
     '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y', '--..' => 'Z', ' ' => ' '
   }
-  return morse_converter[_char]
+  return morse_converter[char]
 end
 
 def decode_word(word)
